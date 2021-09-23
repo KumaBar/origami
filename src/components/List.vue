@@ -1,0 +1,92 @@
+<template>
+  <div class="list">
+    <SectionRecommendation />
+    <SectionBenefit />
+    <SectionRolls />
+  </div>
+</template>
+
+<script>
+import SectionRecommendation from "./SectionRecommendation";
+import SectionBenefit from "./SectionBenefit";
+import SectionRolls from "./SectionRolls";
+export default {
+  name: "List",
+  components: {
+    SectionRecommendation,
+    SectionBenefit,
+    SectionRolls,
+  },
+  methods: {},
+};
+</script>
+
+<style>
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.section:first-child {
+  margin-top: 40px;
+}
+.section-title {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px 5px;
+}
+.section-text {
+  padding: 0px 5px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.section-items {
+  display: flex;
+}
+@media (max-width: 1000px) {
+  .section-title {
+    font-size: 16px;
+  }
+  .section-text {
+    font-size: 12px;
+  }
+  .section-items {
+    flex-direction: column;
+  }
+  .item {
+    width: 100%;
+    display: flex;
+    max-width: none;
+  }
+  .item-content {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .item-title {
+    font-size: 12px;
+  }
+  .item-price {
+    font-size: 12px;
+  }
+  .item-order-btn {
+    font-size: 12px;
+  }
+    .item-img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .item-text {
+    font-size: 10px;
+    display: block;
+    color: grey;
+  }
+  .item-row {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 650px) {
+
+}
+</style>
