@@ -1,8 +1,8 @@
 <template>
   <div class="item">
-    <img @click="openPopup(item)" class="item-img" :src="item.img" />
+    <img class="item-img" :src="item.img" />
     <div class="item-content">
-      <div @click="openPopup(item)" class="item-title">{{ item.title }}</div>
+      <div class="item-title">{{ item.title }}</div>
       <div class="item-text">{{ item.text }}</div>
       <div class="item-row">
         <div class="item-price">{{ item.price }} ₽</div>
@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
 export default {
   name: "Item",
   props: {
@@ -24,9 +23,6 @@ export default {
       require: true,
     },
   },
-  methods: {
-    ...mapActions(["openPopup", "addOrderedItems"]),
-  },
 };
 </script>
 
@@ -34,10 +30,8 @@ export default {
 .item {
   max-width: 350px;
   padding: 5px 10px 5px;
-
-}
-.item-content{
-  width:100%;
+  display: flex;
+  flex-direction: column;
 }
 .item-img {
   display: block;
@@ -51,15 +45,25 @@ export default {
   cursor: pointer;
 }
 .item-text {
-  display: none;
+  display: block;
+  color: grey;
+  line-height: 2;
+}
+.item-content{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height:100%;
+  width:100%;
 }
 .item-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 .item-price {
   font-size: 20px;
+  padding-bottom: 7px;
 }
 .item-order-btn {
   padding: 10px;

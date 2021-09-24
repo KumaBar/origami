@@ -18,7 +18,7 @@
       </li>
     </ul>
     <Order />
-    <div class='menu-btn'>BLOCK</div>
+    <div class='menu-btn' @click="toggleBurger">Меню</div>
   </div>
 </template>
 
@@ -26,9 +26,11 @@
 import secrollToElement from "scroll-to-element";
 import Order from "./Order";
 
+import {mapActions} from 'vuex'
 export default {
   name: "Navigation",
   methods: {
+    ...mapActions(['toggleBurger']),
     scroll(name) {
       secrollToElement(name, {
         offset: 0,
@@ -66,6 +68,10 @@ export default {
 
 .menu-btn{
   display:none;
+  font-size:14px;
+  padding-right:10px;
+  cursor:pointer;
+  padding-top:2px;
 }
 
 @media (max-width:1000px){

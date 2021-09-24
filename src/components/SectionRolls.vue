@@ -13,7 +13,7 @@
 <script>
 import Item from "./Item";
 export default {
-  name: "SectionRecommendation",
+  name: "SectionRolls",
   data() {
     return {
       items: [

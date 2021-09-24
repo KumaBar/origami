@@ -56,13 +56,12 @@ export default {
   }
   .item {
     width: 100%;
-    display: flex;
     max-width: none;
+    flex-direction:row;
   }
   .item-content {
+    display:block;
     padding-left: 10px;
-    display: flex;
-    flex-direction: column;
   }
   .item-title {
     font-size: 12px;
@@ -79,14 +78,9 @@ export default {
   }
   .item-text {
     font-size: 10px;
-    display: block;
-    color: grey;
   }
   .item-row {
     padding-top: 10px;
   }
-}
-@media (max-width: 650px) {
-
 }
 </style>

@@ -29,8 +29,9 @@ export default {
 
 <style>
 .popupWindow {
+  position:relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   display:none;
   top: 0px;

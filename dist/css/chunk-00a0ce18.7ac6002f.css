@@ -1,0 +1,1 @@
+.order-nav{display:flex;padding:15px 0;box-shadow:0 5px 5px -5px rgba(34,60,80,.6);margin-bottom:60px;position:fixed;width:100%;background:#fff;z-index:2}.order-nav a{padding:5px 8px;font-size:20px;color:#000}.order-nav a:hover{color:#dc143c}@media(max-width:650px){.order-nav a{font-size:12px}}

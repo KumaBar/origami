@@ -42,9 +42,7 @@ export default {
 }
 
 @media (max-width: 1000px) {
-  .basket-price {
-    font-size: 20px;
-  }
+
   .basket-item-config {
     max-width: 250px;
   }
@@ -69,6 +67,9 @@ export default {
     font-size:20px;
     margin-top:20px;
     margin-bottom:30px;
+  }
+    .basket-price {
+    font-size: 20px;
   }
 } 
 </style>

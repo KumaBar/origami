@@ -1,7 +1,8 @@
 <template>
   <div class="main">
     <Navigation />
-    <Popup/>
+    <Burger />
+
     <div class="container">
       <List />
     </div>
@@ -9,18 +10,16 @@
 </template>
 
 <script>
-import Popup from "../components/Popup";
 import Navigation from "../components/Navigation";
+import Burger from "../components/Burger";
 import List from "../components/List";
 export default {
   name: "Main",
   components: {
     Navigation,
+    Burger,
     List,
-    Popup,
   },
 };
 </script>
 
-<style>
-</style>

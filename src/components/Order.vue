@@ -56,8 +56,9 @@ export default {
   padding-top: 5px;
 }
 .order-menu-btn{
-  margin-right:20px;
-
+    padding-left: 10px;
+  padding-right: 18px;
+  color:black
 }
 .order-menu-bag {
   width: 25px;
@@ -84,6 +85,7 @@ export default {
 .order-menu-order {
   padding-left: 10px;
   padding-right: 18px;
+  color:black;
 }
 .order-menu-list {
   display: flex;
@@ -126,7 +128,6 @@ export default {
 .order-warning {
   padding-bottom: 20px;
 }
-
 @media (min-width: 1000px) {
   .order-menu:hover .order-menu-wrap {
     display: block;
@@ -137,7 +138,7 @@ export default {
 }
 @media(max-width:650px){
   .order-menu{
-    font-size:14px;
+    font-size:16px;
   }
   .order-menu-bag{
     width:20px;
