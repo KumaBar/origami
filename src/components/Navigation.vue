@@ -10,12 +10,6 @@
       <li class="menu-item">
         <button @click="scroll('.section-rolls')">Роллы и суши</button>
       </li>
-      <li class="menu-item">
-        <button>Четыре</button>
-      </li>
-      <li class="menu-item">
-        <button>Пять</button>
-      </li>
     </ul>
     <Order />
     <div class='menu-btn' @click="toggleBurger">Меню</div>
