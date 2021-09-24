@@ -68,10 +68,10 @@ export default {
 
 .menu-btn{
   display:none;
-  font-size:14px;
+  font-size:16px;
   padding-right:10px;
   cursor:pointer;
-  padding-top:2px;
+  padding-top:4px;
 }
 
 @media (max-width:1000px){
