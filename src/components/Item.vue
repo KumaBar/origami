@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import {mapActions} from 'vuex'
 export default {
   name: "Item",
   props: {
@@ -23,12 +24,15 @@ export default {
       require: true,
     },
   },
+  methods:{
+    ...mapActions(['addOrderedItems'])
+  }
 };
 </script>
 
 <style>
 .item {
-  max-width: 350px;
+  flex-basis:25%;
   padding: 5px 10px 5px;
   display: flex;
   flex-direction: column;

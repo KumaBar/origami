@@ -50,7 +50,7 @@ export default {
 
 <style>
 .form-left {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .form-left-title {
   font-size: 40px;
@@ -66,7 +66,7 @@ export default {
 .form-left-phone,
 .form-left-delivery,
 .form-left-pay {
-  padding-left: 40px;
+  padding-left: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .form-left input {

@@ -47,14 +47,16 @@ export default {
 .basket-item-img {
   max-width: 150px;
   margin-right: 20px;
+  margin-left:5px;
+  flex-basis:50%;
 }
 .basket-item-title {
   margin-bottom: 20px;
 }
 .basket-item-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:space-between;
+align-items:center;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -65,7 +67,8 @@ export default {
 .basket-item-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-basis:50%;
 }
 .basket-item-config {
   display: flex;

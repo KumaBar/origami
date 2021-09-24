@@ -56,6 +56,7 @@ export default {
     margin-left:0;
     margin-right:0;
     flex-direction: column;
+  align-items:stretch;
   }
   .basket-item-img{
     width:200px;
@@ -63,10 +64,14 @@ export default {
     .basket-item-text{
     font-size:14px;
   }
+  .basket-item-descr{
+    justify-content: center;
+  }
   .basket-item-config{
     font-size:20px;
-    margin-top:20px;
-    margin-bottom:30px;
+    padding-top:20px;
+    padding-bottom:30px;
+      margin:0 auto;
   }
     .basket-price {
     font-size: 20px;

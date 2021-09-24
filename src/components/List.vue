@@ -43,6 +43,7 @@ export default {
 }
 .section-items {
   display: flex;
+  flex-wrap: wrap;
 }
 @media (max-width: 1000px) {
   .section-title {

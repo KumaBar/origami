@@ -30,8 +30,10 @@ export default {
 <style>
 .form-right {
   position: fixed;
-  right: 0;
-  top:80px;
+  right:0;
+  padding-right: 10px;
+  padding-left:10px;
+  padding-top:80px;
 }
 .form-right-title {
   font-size: 40px;
@@ -54,7 +56,7 @@ export default {
   display: flex;
 }
 .form-right-item-number {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 .form-right-order-title {
   font-size: 20px;
