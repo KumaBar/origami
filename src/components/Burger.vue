@@ -8,8 +8,6 @@
       <li class="burger-item" @click="scroll('.section-rolls')">
         Роллы и суши
       </li>
-      <li class="burger-item">Четыре</li>
-      <li class="burger-item">Пять</li>
     </ul>
   </div>
 </template>
