@@ -79,7 +79,7 @@ export default {
   background: white;
   border-top-left-radius: 20px;
   padding-left: 10px;
-  padding-top: 4px;
+  padding:10px 0px;
 }
 
 .order-menu-order {

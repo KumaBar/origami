@@ -59,7 +59,7 @@ export default {
   padding: 10px;
 }
 .menu-item {
-  padding: 5px 8px;
+  padding: 10px 8px;
 }
 .menu-item button {
   font-size: 16px;

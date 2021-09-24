@@ -40,41 +40,46 @@ export default {
   text-align: center;
   font-size: 20px;
 }
-
+.basket-set-item {
+  max-width: 250px;
+}
+.basket-set-item-img {
+  width: 100%;
+  display: block;
+}
 @media (max-width: 1000px) {
-
   .basket-item-config {
     max-width: 250px;
   }
 }
-@media (max-width: 650px){
-  .basket-item{
-    padding:5px 0px;
-  border-bottom:1px solid rgba(0,0,0,0.1);
+@media (max-width: 650px) {
+  .basket-item {
+    padding: 5px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  .basket-item-row{
-    margin-left:0;
-    margin-right:0;
+  .basket-item-row {
+    margin-left: 0;
+    margin-right: 0;
     flex-direction: column;
-  align-items:stretch;
+    align-items: stretch;
   }
-  .basket-item-img{
-    width:200px;
+  .basket-item-img {
+    width: 200px;
   }
-    .basket-item-text{
-    font-size:14px;
+  .basket-item-text {
+    font-size: 14px;
   }
-  .basket-item-descr{
+  .basket-item-descr {
     justify-content: center;
   }
-  .basket-item-config{
-    font-size:20px;
-    padding-top:20px;
-    padding-bottom:30px;
-      margin:0 auto;
+  .basket-item-config {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: 0 auto;
   }
-    .basket-price {
+  .basket-price {
     font-size: 20px;
   }
-} 
+}
 </style>
