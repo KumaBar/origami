@@ -34,7 +34,7 @@ export default {
 <style>
 .burger {
   position: fixed;
-  top:40px;
+  top:50px;
   display: none;
   right:20px;
   background: white;

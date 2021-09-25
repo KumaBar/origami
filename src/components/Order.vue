@@ -122,9 +122,6 @@ export default {
     display:block;
   width:25px;
 }
-.order-item-price {
-  margin-left: 40px;
-}
 .order-warning {
   padding-bottom: 20px;
 }

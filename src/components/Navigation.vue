@@ -65,7 +65,6 @@ export default {
   font-size:16px;
   padding-right:10px;
   cursor:pointer;
-  padding-top:4px;
 }
 
 @media (max-width:1000px){

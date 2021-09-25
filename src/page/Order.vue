@@ -45,6 +45,12 @@ export default {
   color: black;
 }
 
+.order-nav a.router-link-active{
+  color:goldenrod;
+}
+.order-home a.router-link-active{
+  color:black;
+}
 .order-nav a:hover {
   color: crimson;
 }

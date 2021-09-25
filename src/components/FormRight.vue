@@ -31,9 +31,13 @@ export default {
 .form-right {
   position: fixed;
   right:0;
-  padding-right: 10px;
+  margin-right: 10px;
+  padding-right:10px;
   padding-left:10px;
-  padding-top:80px;
+  margin-top:80px;
+  padding-top:10px;
+  border-radius:20px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .form-right-title {
   font-size: 40px;
@@ -50,7 +54,7 @@ export default {
   justify-content: space-between;
   width: 400px;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .form-right-block {
   display: flex;

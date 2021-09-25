@@ -31,7 +31,7 @@ export default {
 }
 .section-title {
   font-size: 24px;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
   padding: 0px 5px;
 }
