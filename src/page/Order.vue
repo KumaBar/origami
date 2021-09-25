@@ -51,8 +51,11 @@ export default {
 .order-home a.router-link-active{
   color:black;
 }
+
+@media (min-width:1000px){
 .order-nav a:hover {
   color: crimson;
+}
 }
 @media(max-width:650px){
     .order-nav a{
