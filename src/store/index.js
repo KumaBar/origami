@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-//import createPersistedState from 'vuex-persistedstate'
+import createPersistedState from 'vuex-persistedstate'
 Vue.use(Vuex)
 
 import order from './order'
@@ -12,5 +12,5 @@ export default new Vuex.Store({
         navigation,
         popup,
     },
-    // plugins: [createPersistedState()]
+    plugins: [createPersistedState()]
 })
