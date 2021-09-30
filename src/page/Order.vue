@@ -42,7 +42,7 @@ export default {
 .order-nav a {
   padding: 5px 8px;
   font-size: 20px;
-  color: black;
+  color:black;
 }
 
 .order-nav a.router-link-active{

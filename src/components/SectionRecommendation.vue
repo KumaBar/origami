@@ -8,6 +8,7 @@
       акциями, бонусами и подарками
     </div>
     <div class="section-items">
+                    <CreateSet/>
       <Item v-for="item in items" :item="item" :key="item.id" />
     </div>
   </div>
@@ -15,6 +16,7 @@
 
 <script>
 import Item from "./Item";
+import CreateSet from './CreateSet'
 export default {
   name: "SectionRecommendation",
   data() {
@@ -79,6 +81,9 @@ export default {
   },
   components: {
     Item,
+    CreateSet,
   },
 };
 </script>
+<style>
+</style>

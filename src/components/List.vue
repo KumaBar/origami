@@ -1,5 +1,6 @@
 <template>
   <div class="list">
+    <Slider/>
     <SectionRecommendation />
     <SectionBenefit />
     <SectionRolls />
@@ -7,6 +8,7 @@
 </template>
 
 <script>
+import Slider from './Slider'
 import SectionRecommendation from "./SectionRecommendation";
 import SectionBenefit from "./SectionBenefit";
 import SectionRolls from "./SectionRolls";
@@ -16,6 +18,7 @@ export default {
     SectionRecommendation,
     SectionBenefit,
     SectionRolls,
+    Slider,
   },
   methods: {},
 };
@@ -26,12 +29,9 @@ export default {
   display: flex;
   flex-direction: column;
 }
-.section:first-child {
-  margin-top: 40px;
-}
 .section-title {
   font-size: 24px;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 20px;
   padding: 0px 5px;
 }
@@ -78,6 +78,7 @@ export default {
     max-height: 150px;
   }
   .item-text {
+    display:block;
     font-size: 10px;
   }
   .item-row {

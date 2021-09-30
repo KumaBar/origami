@@ -7,6 +7,7 @@
     <div class="basket-list">
       <BasketItem v-for="item in getOrderedItems" :key="item.id" :item="item" />
     </div>
+    <Spices/>
     <div class="basket-price">Сумма вашего заказа: {{ getTotalPrice }} ₽</div>
   </div>
 </template>
@@ -14,6 +15,7 @@
 <script>
 import { mapGetters } from "vuex";
 import BasketItem from "./BasketItem";
+import Spices from './Spices'
 export default {
   name: "Basket",
   computed: {
@@ -21,6 +23,7 @@ export default {
   },
   components: {
     BasketItem,
+    Spices,
   },
 };
 </script>
@@ -32,9 +35,10 @@ export default {
 }
 .basket-price {
   font-size: 40px;
-  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 20px;
   padding-bottom: 40px;
+  text-align:center;
 }
 .baskset-warning {
   text-align: center;

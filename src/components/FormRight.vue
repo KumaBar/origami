@@ -32,6 +32,7 @@ export default {
   position: fixed;
   right:0;
   margin-right: 10px;
+    margin-left: 10px;
   padding-right:10px;
   padding-left:10px;
   margin-top:80px;
@@ -65,5 +66,7 @@ export default {
 .form-right-order-title {
   font-size: 20px;
   margin-bottom: 20px;
+  margin-right:20px;
+  
 }
 </style>

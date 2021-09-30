@@ -40,6 +40,7 @@ export default {
   background: white;
   border-radius:20px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  z-index:2;
 }
 .burger.active {
   display: block;

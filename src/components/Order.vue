@@ -55,6 +55,9 @@ export default {
   position: relative;
   padding-top: 5px;
 }
+.order-menu-price{
+  padding-left:10px;
+}
 .order-menu-btn{
     padding-left: 10px;
   padding-right: 18px;

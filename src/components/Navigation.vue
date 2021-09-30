@@ -12,7 +12,7 @@
       </li>
     </ul>
     <Order />
-    <div class='menu-btn' @click="toggleBurger">Меню</div>
+    <div class="menu-btn" @click="toggleBurger">Меню</div>
   </div>
 </template>
 
@@ -20,11 +20,11 @@
 import secrollToElement from "scroll-to-element";
 import Order from "./Order";
 
-import {mapActions} from 'vuex'
+import { mapActions } from "vuex";
 export default {
   name: "Navigation",
   methods: {
-    ...mapActions(['toggleBurger']),
+    ...mapActions(["toggleBurger"]),
     scroll(name) {
       secrollToElement(name, {
         offset: 0,
@@ -43,10 +43,11 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position:fixed;
-  width:100%;
-  background:white;
+  position: fixed;
+  width: 100%;
+  background: white;
   box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  z-index: 2;
 }
 .menu {
   display: flex;
@@ -60,22 +61,28 @@ export default {
   background: none;
 }
 
-.menu-btn{
-  display:none;
-  font-size:16px;
-  padding-right:10px;
-  cursor:pointer;
+.menu-btn {
+  display: none;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  cursor: pointer;
 }
 
-@media (max-width:1000px){
-  .navigation{
-    justify-content:flex-end;
+@media (max-width: 1000px) {
+  .navigation {
+    justify-content: flex-end;
   }
-  .menu{
-    display:none;
+  .menu {
+    display: none;
   }
-  .menu-btn{
-  display:block;
+  .menu-btn {
+    display: block;
+  }
 }
+@media(max-width:650px){
+  .menu-btn {
+padding-top: 5px;
+  }
 }
 </style>
