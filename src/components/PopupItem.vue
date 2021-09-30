@@ -3,7 +3,7 @@
     <div :class="{ pItemImg: true }">
       <img :src="item.img" />
       <div :id="item.id" class="p-img-text" @click="toggleSelect(item)">
-        {{ gram }} <br />
+       <span>{{ gram }}</span>  <br />
         {{ item.text }}
       </div>
     </div>
@@ -62,7 +62,7 @@ export default {
   flex-basis: 25%;
   padding: 20px;
   display: flex;
-  align-items: center;
+  
   flex-direction: column;
   max-width: 190px;
   margin: 10px;
@@ -74,6 +74,7 @@ export default {
   position: relative;
   cursor: pointer;
   width: 120px;
+  align-self: center;
 }
 .pItemImg img {
   display: block;
@@ -94,12 +95,16 @@ export default {
   transition: 0.2s;
   overflow: hidden;
 }
+.p-item-title span{
+  display:block;
+}
 .p-item-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 5px;
 }
+
 .p-item-title img {
   cursor: pointer;
   display: block;
