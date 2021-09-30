@@ -31,8 +31,21 @@ export default {
   opacity: 0.5;
 }
 @media (max-width: 640px) {
-  .pLIst {
+  .pList {
     justify-content: space-between;
+    flex-wrap:no-wrap;
   }
+  .pItem{
+    padding:5px;
+    margin:0;
+  }
+  .p-item-title{
+    width:100%;
+    justify-content: space-between;
+    font-size:12px;
+  }
+}
+@media (max-width:400px){
+
 }
 </style>

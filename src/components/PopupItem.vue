@@ -1,6 +1,6 @@
 <template>
   <div :class="{ pItem: true, selected: item.selected }">
-    <div :class="{pItemImg:true}">
+    <div :class="{ pItemImg: true }">
       <img :src="item.img" />
       <div :id="item.id" class="p-img-text" @click="toggleSelect(item)">
         {{ gram }} <br />
@@ -9,7 +9,9 @@
     </div>
     <div class="p-item-title">
       {{ item.title }}
-      <img @click="visibleText(item.id)" src="../assets/question.svg" />
+      <button @click="visibleText(item.id)">
+        <img src="../assets/question.svg" />
+      </button>
     </div>
   </div>
 </template>
@@ -54,27 +56,34 @@ export default {
 
 <style>
 .selected {
- background: lime;
+  background: lime;
 }
 .pItem {
   flex-basis: 25%;
   padding: 20px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   max-width: 190px;
-  margin:10px;
+  margin: 10px;
+}
+.pItem button{
+  background:none;
 }
 .pItemImg {
   position: relative;
   cursor: pointer;
+  width: 120px;
 }
 .pItemImg img {
   display: block;
-  width: 150px;
+  width: 120px;
 }
 .p-img-text {
   top: 0;
+  left: 0;
   height: 100%;
+  max-width: 120px;
   padding: 5px;
   position: absolute;
   font-size: 10px;
@@ -96,7 +105,4 @@ export default {
   display: block;
   width: 18px;
 }
-@media (min-width: 1000px) {
-}
-
 </style>

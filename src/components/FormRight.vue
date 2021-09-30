@@ -67,6 +67,17 @@ export default {
   font-size: 20px;
   margin-bottom: 20px;
   margin-right:20px;
-  
+}
+@media(max-width:400px){
+  .form-right-item-number {
+  padding-right: 5px;
+}
+.form-right-item-price{
+  font-size:12px;
+}
+  .form-right-item-title,
+  .form-right-item-number {
+  font-size: 12px;
+}
 }
 </style>
