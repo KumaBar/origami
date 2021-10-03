@@ -1,24 +1,8 @@
 # origami
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Это клон сайта https://imagiro.ru/ на vue.js + vuex + vue-router
+# Сейчас на сайте есть:
+* Навигация 
+* Слайдер
+* Корзина
+* Свой набор
+# Посмотреть онлайн можно тут https://origami-apprst.herokuapp.com/
